@@ -1,5 +1,5 @@
 package executaveis;
-import br.com.fiap.fabricaVeiculos.Carro;
+import br.com.fiap.modelos.Carro;
 
 public class AndaNoCarro {
 

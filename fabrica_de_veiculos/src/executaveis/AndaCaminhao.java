@@ -1,6 +1,6 @@
 package executaveis;
 
-import br.com.fiap.fabricaVeiculos.Caminhao;
+import br.com.fiap.modelos.Caminhao;
 
 public class AndaCaminhao {
 
@@ -26,7 +26,7 @@ public class AndaCaminhao {
 		meuCaminhao.aceleraCarro(130);
 		meuCaminhao.exibeCarro();
 		
-		meuCaminhao.set
+	
 
 	}
 

@@ -1,12 +1,17 @@
 package executaveis;
-import br.com.fiap.fabricaVeiculos.Conta;
+import br.com.fiap.modelos.Conta;
+import br.com.fiap.modelos.Cliente;
+
 
 public class CriaConta {
 
 	public static void main(String[] args) {
-		Conta minhaConta = new Conta("Pedro", "222333444555", 128732983031921L);
-		
+		Cliente clienteThiago = new Cliente("Thiago", "44363342752", "Rua dos palmares", "12/01/2005");
+		Conta minhaConta = new Conta(1232949821L, clienteThiago);
+		minhaConta.depositar(928);
 		minhaConta.exibirSaldo();
+		
+		
 
 	}
 

@@ -1,17 +1,14 @@
-package br.com.fiap.fabricaVeiculos;
+package br.com.fiap.modelos;
 
 public class Conta {
-	private String nomeCliente;
-	private String cpfCliente;
 	private long numeroConta;
 	private double saldo;
+	private Cliente cliente;
+
 	
-	
-	public Conta(String nomeCliente, String cpfCliente, long numeroConta) {
-		super();
-		this.nomeCliente = nomeCliente;
-		this.cpfCliente = cpfCliente;
+	public Conta(long numeroConta, Cliente cliente) {
 		this.numeroConta = numeroConta;
+		this.cliente = cliente;
 	}
 
 	// METODOS//----------------------------------------------------------------------
@@ -48,10 +45,10 @@ public class Conta {
 	// EXIBIR
 	// SALDO//------------------------------------------------------------------
 	public void exibirSaldo() {
-		System.out.println("CPF: " + this.cpfCliente);
 		System.out.println("Numero de conta: " + this.numeroConta);
-		System.out.println("Nome: " + this.nomeCliente);
+		System.out.println("Nome do Cliente: " + this.cliente.nome);
 		System.out.println("Saldo: " + this.saldo);
+		System.out.println("Data : " + this.cliente.getDataNasc());
 	}
 
 }

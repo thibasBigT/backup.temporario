@@ -1,4 +1,4 @@
-package br.com.fiap.fabricaVeiculos;
+package br.com.fiap.modelos;
 
 public class Caminhao {
 	private String marca;
